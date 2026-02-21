@@ -49,7 +49,7 @@ Feeling a bit lost on implementation; focused on taking notes for now.
 
 **Key learning:**
 
-I discovered that cryptography isn't just about "scrambling" text; it is a structured process of data transformation.
+I discovered that cryptography isn't just about "scrambling" text; it is a structured process of data transformation. The good thing is, we have recently tackled this in our Discrete 2 Subject, I just need to know now the way of implementing this.
 
 ---
 
