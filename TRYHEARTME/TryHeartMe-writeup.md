@@ -29,7 +29,7 @@ Even with the money, the "Valenflag" wasn't showing up in the search results nor
 - Based on the walkthrough logic, I navigated to the specific URL for the item or the admin section where the flag was listed.
 - Because my "ID card" (the cookie) now said I had the permissions and the credits, the website allowed the transaction to go through!
 
-**Flag Captured!!**
+**Flag Captured!!: https://tryhackme.com/room/lafb2026e5?utm_campaign=social_share&utm_medium=social&utm_content=share-completed-room&utm_source=copy&sharerId=698ad8d244efc8fda47d7f7f**
 
 ## What I Learned
 I learned that websites shouldn't trust the information stored in a user's browser. If a user can find their "ID card" (cookie) and edit it to give themselves more money or higher access, the website is vulnerable. This is called **Insecure Authentication**.
