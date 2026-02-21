@@ -60,4 +60,4 @@ Which categories did you practice?
 **Date:** Feb. 13, 2026 | **Training Day:** 1/180
 - Started the introduction to cryptography in cryptography.org, I found out I needed to learn python basics
 - **Status:** I finished the first two lessons but the third lesson requires a for loop coding in which my current python coding abilities is not yet capable of.
-- Took me around 3 hours to finish watching a 30 minute youtube tutorial as well as understanding the syntax
+- Took me around 4-5 hours to finish watching a 10 and a 40 minute youtube tutorial as well as understanding the syntax of the python programming language.
