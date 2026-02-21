@@ -99,3 +99,28 @@ def say_hello(name):
 
 # Calling the function
 say_hello("Mario")
+```
+## 🛠️ Data Transformation Functions
+**Core Idea:** Essential functions for converting between human-readable text and computer-readable numbers.
+
+| Function | Input | Output | Purpose |
+| :--- | :--- | :--- | :--- |
+| `len(x)` | List / String | Integer | Returns the total count of items/characters. |
+| `ord("a")` | Character | Integer | Converts a character to its **ASCII number** (97). |
+| `chr(97)` | Integer | Character | Converts an **ASCII number** back to a character ("a"). |
+
+---
+
+## 🏗️ Python Fundamentals
+
+### 1. Variables & Assignment
+* **Assignment:** `variable = value` (e.g., `i = [1, 2, 3]`). 
+* **Note:** To copy a list, assign it directly: `i = number_list`.
+* **Naming:** Use `underscores_for_names`. Python is **case-sensitive** (`item` != `Item`).
+
+### 2. Loops & Logic
+* **For Loop:** Automatically iterates through a list. No need to define the variable first.
+  ```python
+  for n in number_list:
+      print(chr(n)) # Converts each number in the list
+  ```
