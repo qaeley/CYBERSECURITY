@@ -1,12 +1,12 @@
 # Daily Reports
 
 ### 
-- Found the basics of cryptography on YouTube.
-- **Status:** Feeling a bit lost on implementation; focused on taking notes for now.
-- Took me around 2 hours plus to finish my notes.
 
 ---
 **Date:** Feb. 12, 2026 | **Training Day:** 1/180
+- Found the basics of cryptography on YouTube.
+- **Status:** Feeling a bit lost on implementation; focused on taking notes for now.
+- Took me around 2 hours plus to finish my notes.
 
 ### 1. Time Investment
 
@@ -37,24 +37,27 @@ Which categories did you practice?
 
 **What went well today?**
 
-I studied the basics and learned about the different key concepts.
+*I studied the basics and learned about the different key concepts.*
 
----
 
 **What challenged you?**
 
-Feeling a bit lost on implementation; focused on taking notes for now.
+*Feeling a bit lost on implementation; focused on taking notes for now.*
 
----
 
 **Key learning:**
 
-I discovered that cryptography isn't just about "scrambling" text; it is a structured process of data transformation. The good thing is, we have recently tackled this in our Discrete 2 Subject, I just need to know now the way of implementing this.
+*I discovered that cryptography isn't just about "scrambling" text; it is a structured process of data transformation. The good thing is, we have recently tackled this in our Discrete 2 Subject, I just need to know now the way of implementing this.*
 
----
 
 **Tomorrow's focus:**
 
-I might ask our supervisor regarding resources I should use to learn cryptography.
+*I might ask our supervisor regarding resources I should use to learn cryptography.*
+
 
 ---
+
+**Date:** Feb. 13, 2026 | **Training Day:** 1/180
+- Started the introduction to cryptography in cryptography.org, I found out I needed to learn python basics
+- **Status:** I finished the first two lessons but the third lesson requires a for loop coding in which my current python coding abilities is not yet capable of.
+- Took me around 3 hours to finish watching a 30 minute youtube tutorial as well as understanding the syntax
