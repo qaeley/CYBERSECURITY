@@ -6,7 +6,7 @@
 - Took me around 2 hours plus to finish my notes.
 
 ---
-**Date:** Feb. 12, 2026 | **Training Day:** 1/180 (or ___/90 for 3-month plan)
+**Date:** Feb. 12, 2026 | **Training Day:** 1/180
 
 ### 1. Time Investment
 
