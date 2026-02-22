@@ -176,3 +176,23 @@ print(decoded_bytes) # Output: b'rot13'
 readable_text = decoded_bytes.decode()
 print(readable_text) # Output: rot13
 ```
+
+## 🔢 Large Number Conversion (PyCryptodome)
+**Core Idea:** Converting between raw bytes and large integers for mathematical operations.
+
+* **Requirement:** Install library via `pip install pycryptodome` and import:
+  `from Crypto.Util.number import *`
+
+```python
+from Crypto.Util.number import bytes_to_long, long_to_bytes
+
+# Convert Bytes to Large Integer (Base-10)
+data = b'hello'
+long_val = bytes_to_long(data) 
+# Result: 448378203247
+
+# Convert Large Integer back to Bytes
+original_bytes = long_to_bytes(long_val)
+# Result: b'hello'
+```
+
