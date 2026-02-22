@@ -33,7 +33,7 @@
 ---
 
 ## 🛠️ Implementation Summary
-To move between these in Python, refer to the functions in my [Python Cheat Sheet](CRYPTOGRAPHY-FORENSICS/Python-Cheatsheet.md):
+To move between these in Python, refer to the functions in my [Python Cheat Sheet](CRYPTOGRAPHY-FORENSICS/INTRODUCTION-TO-CRYPTOHACK/Python-Cheatsheet.md):
 * `ord()` / `chr()` for ASCII.
 * `bytes.fromhex()` for Hexadecimal.
 * `base64` library for Base64 conversions.
