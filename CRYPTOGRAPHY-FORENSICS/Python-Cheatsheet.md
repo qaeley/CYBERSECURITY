@@ -130,3 +130,26 @@ raw_bytes = bytes.fromhex("68656c6c6f")
 # From Bytes back to Hex String
 hex_string = raw_bytes.hex()
 # Result: "68656c6c6f"
+```
+## 📦 Base64 Encoding
+**Core Idea:** Converting binary data into a 64-character alphabet string for web-safe transmission.
+
+* **Requirement:** You must include `import base64` at the top of your `.py` file.
+* **The Workflow:** Most challenges give you a **Hex string** that you must convert to **Bytes** before you can encode it to **Base64**.
+
+
+
+### Example Implementation:
+```python
+import base64
+
+# 1. Start with a hex string
+hex_data = "726f743133"
+
+# 2. Convert Hex to Bytes (Crucial Step!)
+binary_data = bytes.fromhex(hex_data)
+
+# 3. Encode to Base64
+b64_data = base64.b64encode(binary_data)
+
+print(b64_data) # Output: b'cm90MTM='
