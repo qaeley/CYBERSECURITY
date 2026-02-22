@@ -134,8 +134,8 @@ hex_string = raw_bytes.hex()
 ## 📦 Base64 Encoding
 **Core Idea:** Converting binary data into a 64-character alphabet string for web-safe transmission.
 
-* **Requirement:** You must include `import base64` at the top of your `.py` file.
-* **The Workflow:** Most challenges give you a **Hex string** that you must convert to **Bytes** before you can encode it to **Base64**.
+* **Requirement:** Must include `import base64` at the top of `.py` file.
+* **The Workflow:** Most challenges gives a **Hex string** that must be converted to **Bytes** before you can encode it to **Base64**.
 
 
 
@@ -157,7 +157,7 @@ print(b64_data) # Output: b'cm90MTM='
 ### 🔄 Base64 Decoding
 **Core Idea:** Converting a Base64 encoded string back into its original raw bytes.
 
-* **Usage:** Use `base64.b64decode()` when you are given a Base64 string and need to retrieve the original data.
+* **Usage:** Use `base64.b64decode()` when given a Base64 string and need to retrieve the original data.
 * **The Workflow:** Base64 String -> `base64.b64decode()` -> Raw Bytes -> `.hex()` or `chr()` (depending on target format).
 
 #### Example Implementation:
