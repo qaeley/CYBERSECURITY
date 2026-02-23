@@ -10,3 +10,6 @@ I learned that XOR is its own inverse and that the order of operations doesn't m
 * **`zip()`**: A tool to pair up sequences safely.
 * **List Comprehensions**: How `[a ^ b for a, b in ...]` creates a new list in memory on the fly.
 * **Type Casting**: Using `bytes()` to convert an integer list back into a raw data object so it can be printed as a flag.
+
+---
+![image alt](https://github.com/qaeley/CYBERSECURITY/blob/b07fad30471ebf535b057c2aab461b3164b5f973/CRYPTOGRAPHY-FORENSICS/Uploaded%20Pics/Screenshot%202026-02-23%20at%202.20.03%20PM.png)
