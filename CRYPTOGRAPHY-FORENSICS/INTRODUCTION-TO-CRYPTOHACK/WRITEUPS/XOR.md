@@ -5,3 +5,7 @@ I implemented a manual XOR pipeline by iterating through each character of a str
 
 ### What I learned
 I learned that XOR is a bitwise operation that compares binary bits, and in Python, the `^` operator handles this at the integer level. This challenge taught me the "Manual XOR Pattern": **String → Ordinal → XOR → Character → List → Join**. I also learned that when external libraries like `pwntools` fail to install, I can replicate their core functionality using Python’s built-in methods.
+
+---
+
+![image alt](https://github.com/qaeley/CYBERSECURITY/blob/cabea9039a6e2ecd03b27ab0e4c14188a5a2cca5/CRYPTOGRAPHY-FORENSICS/Uploaded%20Pics/Screenshot%202026-02-23%20at%2012.09.04%20PM.png)
