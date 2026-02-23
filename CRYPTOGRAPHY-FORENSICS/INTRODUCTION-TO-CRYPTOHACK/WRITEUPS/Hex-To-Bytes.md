@@ -1,6 +1,6 @@
 # 🔍 Hexadecimal Decoding
 
-### Logic (What I did)
+### Logic 
 I took the provided hexadecimal string and used the Python built-in method `bytes.fromhex()` to convert the base-16 representation back into raw data. By passing the hex string through this function, Python automatically grouped the characters into pairs and mapped them to their corresponding byte values, which I then printed to reveal the ASCII flag.
 
 ### What I learned
