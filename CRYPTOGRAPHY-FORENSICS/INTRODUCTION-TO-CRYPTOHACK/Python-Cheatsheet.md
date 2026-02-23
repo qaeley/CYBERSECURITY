@@ -273,3 +273,53 @@ print(f"crypto{{{flag}}}")
 print(f"The result is {10 + 3}") 
 # Output: The result is 13
 ```
+## ⚡ XORing Two Byte Strings
+**Purpose:** Systematically XORing long sequences of data.
+
+* **The Logic:** You must XOR each byte index-by-index.
+* **The Tools:** `zip()` to pair them, `^` to XOR, and `bytes()` to wrap it back up.
+
+### 🛠️ The "One-Liner" XOR
+```python
+# Convert hex to bytes first
+b1 = bytes.fromhex("a6c8...")
+b2 = bytes.fromhex("37dc...")
+
+# Systematically XOR both
+result = bytes([x ^ y for x, y in zip(b1, b2)])
+print(result.hex())
+```
+## 🐍 Python vs C: List Comprehension
+**Purpose:** Performing operations on every item in a list without manual index counters.
+
+| Feature | C Approach | Python "One-Liner" |
+| :--- | :--- | :--- |
+| **Looping** | `for(int i=0; i<len; i++)` | `for x in list` |
+| **Pairing** | `list1[i], list2[i]` | `zip(list1, list2)` |
+| **Storage** | `result[i] = x ^ y` | `[x ^ y for x, y in ...]` |
+
+### 🛠️ Example: Byte XOR
+```python
+# The "C-Style" manual way in Python:
+res = []
+for i in range(len(b1)):
+    res.append(b1[i] ^ b2[i])
+
+# The "Pythonic" way:
+res = bytes([x ^ y for x, y in zip(b1, b2)])
+```
+## 🛡️ The Safety of `zip()`
+**Concept:** Prevents "Index Out of Bounds" errors common in C.
+
+* **Behavior:** If two lists are different lengths, `zip()` stops at the **shortest** one.
+* **Unpacking:** The syntax `for a, b in zip(list1, list2)` assigns the first item of list1 to `a` and the first of list2 to `b` simultaneously.
+
+### 🛠️ Visualizing the pairing:
+```python
+keys = [1, 2, 3]
+data = [10, 20, 30, 40, 50]
+
+# result will only have 3 items!
+result = [a ^ b for a, b in zip(keys, data)]
+# Output: [11, 22, 25]
+```
