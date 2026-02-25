@@ -1,0 +1,18 @@
+# 🕵️‍♂️ Challenge: You either know, XOR you don't
+
+### Logic (What I did)
+I approached this challenge by applying the **Known Plaintext Attack** property of XOR. Since I knew the flag must start with the format `crypto{`, I XORed the first 7 bytes of the hex ciphertext with those known characters. This mathematical operation ($Ciphertext \oplus Plaintext = Key$) successfully "leaked" the secret key.
+
+Once I identified the key as `myXORkey`, I implemented a **Repeating-Key XOR** script. Because the key was shorter than the ciphertext, I used a loop with the **Modulo Operator (`%`)** to cyclically apply the key across the entire message. This ensured that every byte of the flag was XORed with the correct corresponding byte of the secret key.
+
+
+### Initial Struggles
+My primary struggle was dealing with the "Garbage Text" output after my first attempt. Initially, I only XORed the first 7 bytes to find the key, which gave me `myXORke`. Because I missed the 8th character (`y`), my key was "out of sync." This caused an alignment shift where every subsequent byte was XORed with the wrong part of the key, turning the flag into unreadable symbols. I had to realize that the key was a full word and extend it to 8 bytes to fix the alignment.
+
+### What I learned
+This challenge moved me beyond simple single-byte brute force and taught me the mechanics of multi-byte keys:
+
+* **The XOR Commutative Property**: I learned that if I know even a small part of the message (the "Known Plaintext"), I can force the ciphertext to reveal the secret key.
+* **Modulo Arithmetic for Loops**: I mastered the `i % len(key)` logic. This is the standard way to make a short key "wrap around" to the beginning when decrypting a long string.
+* **Key Alignment**: I learned that if an XORed string looks like "half-garbage," it is a signal that the key length is wrong or the alignment is shifted.
+* **Advanced `zip()` and List Comprehensions**: I further practiced using `zip()` to pair up bytes for math and how to handle larger data structures efficiently in Python.
