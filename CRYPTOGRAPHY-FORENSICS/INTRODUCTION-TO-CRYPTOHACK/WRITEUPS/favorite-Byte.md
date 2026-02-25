@@ -15,3 +15,5 @@ I learned the "skeleton key" nature of single-byte XOR and how to transition my 
 * **List Comprehension**: I mastered the `[operation for item in list]` syntax, which provides a high-speed way to perform a "Broadcast XOR" across an entire string by defining the outcome first.
 * **Membership Operator (`in`)**: I learned that `in` is a versatile tool; in an `if` statement, it performs a high-level search to find a needle in a haystack.
 * **The `b"..."` Prefix**: I realized that when working with raw data, I must compare bytes to bytes using the `b` prefix for literals to avoid the "Apples vs. Oranges" comparison error.
+---
+![image alt](https://github.com/qaeley/CYBERSECURITY/blob/2d7356146cf773f276e562e32485151cd7a18848/CRYPTOGRAPHY-FORENSICS/Uploaded%20Pics/download.jpg)
