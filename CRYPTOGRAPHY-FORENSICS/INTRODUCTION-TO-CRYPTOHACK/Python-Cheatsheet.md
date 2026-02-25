@@ -419,7 +419,7 @@ def repeating_xor(data, key):
 # Key:  [A, B]       (Length 2)
 # Loop: (H^A), (E^B), (L^A), (L^B), (O^A)
 ```
-### ✂️ Python Slicing Cheatsheet (`array[start:stop]`)
+### (`array[start:stop]`)
 
 Slicing allows you to access specific chunks of data. In Crypto challenges, this is used to verify headers or process data in blocks.
 
