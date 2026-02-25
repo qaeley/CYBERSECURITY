@@ -388,3 +388,33 @@ for key in range(256):
         print(f"Flag: {checker.decode()}")
         break
 ```
+It is easily the most useful math trick in cryptography. Here is a clean, GitHub-style Markdown snippet for your cheatsheet.
+
+Markdown
+# The Modulo Operator (%)
+
+In cryptography, we use the **Modulo Operator** to create a "Circular Loop." This is essential for **Repeating-key XOR**, where the key is shorter than the message.
+
+### 🛠️ The Core Logic
+When looping through a message with index `i`, we use `i % len(key)` to ensure the key resets to the beginning once we hit the end.
+
+| Index (i) | Key Length | `i % 3` (Result) | Action |
+| :--- | :--- | :--- | :--- |
+| 0 | 3 | **0** | Use key[0] |
+| 1 | 3 | **1** | Use key[1] |
+| 2 | 3 | **2** | Use key[2] |
+| 3 | 3 | **0** | **RESET** to key[0] |
+
+---
+
+### 💻 Python Implementation (Repeating XOR)
+
+```python
+def repeating_xor(data, key):
+    # i % len(key) ensures the key wraps around infinitely
+    return bytes([data[i] ^ key[i % len(key)] for i in range(len(data))])
+
+# Example:
+# Data: [H, E, L, L, O] (Length 5)
+# Key:  [A, B]       (Length 2)
+# Loop: (H^A), (E^B), (L^A), (L^B), (O^A)
