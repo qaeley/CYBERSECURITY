@@ -418,3 +418,27 @@ def repeating_xor(data, key):
 # Data: [H, E, L, L, O] (Length 5)
 # Key:  [A, B]       (Length 2)
 # Loop: (H^A), (E^B), (L^A), (L^B), (O^A)
+```
+### ✂️ Python Slicing Cheatsheet (`array[start:stop]`)
+
+Slicing allows you to access specific chunks of data. In Crypto challenges, this is used to verify headers or process data in blocks.
+
+| Syntax | Meaning | Result for `b"crypto{flag}"` |
+| :--- | :--- | :--- |
+| `data[:3]` | **First 3** elements | `b"cry"` |
+| `data[3:]` | **Everything after** index 3 | `b"pto{flag}"` |
+| `data[-4:]` | **Last 4** elements | `b"flag"` |
+| `data[1:4]` | From index 1 **up to (not including)** 4 | `b"ryp"` |
+| `data[:]` | **Copy** the whole array | `b"crypto{flag}"` |
+
+
+
+---
+
+### 💡 Pro Tip: Using Slices for Flag Validation
+When brute-forcing XOR, you can use a slice in your `if` statement to check if you've found the flag without checking the whole string:
+
+```python
+# Check if the first 7 characters are the flag header
+if result[:7] == b"crypto{":
+    print("Found it!")
