@@ -365,20 +365,7 @@ Inside a Brute Force loop, `if b"crypto" in checker:` acts as a hidden loop that
 
 ---
 
-## 🔡 3. Encode vs. Decode (The Human-to-Computer Bridge)
-* **`.encode()`**: **String ➡️ Bytes**. (Taking text and turning it into raw 8-bit data).
-* **`.decode()`**: **Bytes ➡️ String**. (Taking raw 8-bit data and turning it back into readable text).
-
-**The Logic Cycle:**
-1. `bytes.fromhex(hex_string)` ➡️ Raw Computer Data
-2. `[b ^ key for b in raw_data]` ➡️ Bitwise Math
-3. `bytes(...).decode()` ➡️ Human Readable Flag
-
-
-
----
-
-## 🧬 4. The Anatomy of List Comprehension
+## 🧬3. The Anatomy of List Comprehension
 In Python, we tell the computer *what* we want first, then *where* to get it. 
 
 **The Syntax:**
