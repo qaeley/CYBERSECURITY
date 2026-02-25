@@ -16,3 +16,5 @@ This challenge moved me beyond simple single-byte brute force and taught me the 
 * **Modulo Arithmetic for Loops**: I mastered the `i % len(key)` logic. This is the standard way to make a short key "wrap around" to the beginning when decrypting a long string.
 * **Key Alignment**: I learned that if an XORed string looks like "half-garbage," it is a signal that the key length is wrong or the alignment is shifted.
 * **Advanced `zip()` and List Comprehensions**: I further practiced using `zip()` to pair up bytes for math and how to handle larger data structures efficiently in Python.
+---
+![image alt](https://github.com/qaeley/CYBERSECURITY/blob/1862fb53db67b19724b29febdbe6634dc992df6b/CRYPTOGRAPHY-FORENSICS/Uploaded%20Pics/download.jpg)
