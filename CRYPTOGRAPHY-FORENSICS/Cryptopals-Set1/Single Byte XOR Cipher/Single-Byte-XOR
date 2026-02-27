@@ -1,0 +1,17 @@
+
+given_data = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
+#--------------------------------------
+evaluate_byte = bytes.fromhex(given_data)
+
+for key in range(256):
+    plaintext = bytes([b ^ key for b in evaluate_byte])
+    
+    if b" " in plaintext:
+        print(f"Key:[{key}], Plaintext: {plaintext}")
+    
+
+#key found: Key:[88], Plaintext: b"Cooking MC's like a pound of bacon"
+#since we are looking for an english plaintext, this here fits best
+single_byte_key = chr(88)
+print(f"Secret Key: {single_byte_key}, =  {ord(single_byte_key)}")
+
