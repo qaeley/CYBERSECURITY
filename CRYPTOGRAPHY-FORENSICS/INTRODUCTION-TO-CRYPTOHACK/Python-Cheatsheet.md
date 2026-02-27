@@ -442,3 +442,25 @@ When brute-forcing XOR, you can use a slice in your `if` statement to check if y
 # Check if the first 7 characters are the flag header
 if result[:7] == b"crypto{":
     print("Found it!")
+```
+# 📂 Python File Handling Cheatsheet
+
+In Cryptography challenges (like Cryptopals #4), you often get a `.txt` file containing many hex strings. You need to loop through each line to find the hidden flag.
+
+### 🛠️ The "With" Statement (Best Practice)
+Always use the `with` keyword. It automatically closes the file for you, even if your script crashes.
+
+```python
+# 'r' means Read mode
+with open("challenge_data.txt", "r") as f:
+    # .readlines() turns the file into a list of strings
+    lines = f.readlines()
+
+for line in lines:
+    # Use .strip() to remove the hidden newline (\n) at the end of each line
+    clean_line = line.strip()
+    
+    # Process your hex data
+    data = bytes.fromhex(clean_line)
+    
+    # ... your XOR logic here ...
